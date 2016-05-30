@@ -1,0 +1,32 @@
+{
+    "version": "2.1.0",
+    "title": "Tests.Raspberry.IO",
+    "authors": [
+        "Eric Bézine",
+        "Christoph Murczek"
+    ],
+    "language": "en-US",
+    "packOptions": {
+        "tags": [ "Raspberry", "Pi", "Mono", "CoreCLR", "DNX", "IO", "GPIO" ],
+        "owners": [ "Raspberry-Sharp" ],
+        "requireLicenseAcceptance": true,
+        "projectUrl": "https://github.com/raspberry-sharp/raspberry-sharp-io",
+        "licenseUrl": "http://opensource.org/licenses/GPL-2.0",
+        "iconUrl": "https://raw.github.com/raspberry-sharp/raspberry-sharp-system/master/Icon.png"
+    },
+    "dependencies": {
+        "NUnit": "3.2.1",
+        "FluentAssertions": "4.6.3",
+        "Moq": "4.6.23-alpha" // FakeItEasy
+    },
+    "frameworks": {
+        "net45": {},
+        "netcoreapp1.0": {
+            "imports": "dnxcore50",
+            "dependencies": {
+                "Microsoft.CSharp": "4.0.1-rc2-24027",
+                "System.Runtime": "4.1.0-rc2-24027"
+            }
+        }
+    }
+}
